@@ -1,0 +1,13 @@
+<h1>Taxas do Bitcoin em real e dólar</h1>
+<table border="1">
+  <tr>
+    <th>Última atualização</th>
+    <th>USD (dólar americano)</th>
+    <th>BRL (real Brasil)</th>
+  </tr>
+  <tr *ngFor="let rate of this.taxaBitcoinService.ratesList">
+    <td>{{ rate.timestamp | currency }}</td>
+    <td>{{ rate.USD | currency }}</td>
+    <td>{{ rate.BRL | currency }}</td>
+  </tr>
+</table>

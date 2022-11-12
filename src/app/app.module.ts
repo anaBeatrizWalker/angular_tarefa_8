@@ -4,10 +4,14 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
+import { HttpClientModule } from '@angular/common/http';
+import { TaxaBitcoinService } from './services/taxa-bitcoin.service';
+import { TaxaBitcoinComponent } from './taxa-bitcoin/taxa-bitcoin.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent ],
-  bootstrap:    [ AppComponent ]
+  imports: [BrowserModule, FormsModule, HttpClientModule],
+  declarations: [AppComponent, HelloComponent, TaxaBitcoinComponent],
+  bootstrap: [AppComponent],
+  providers: [TaxaBitcoinService],
 })
-export class AppModule { }
+export class AppModule {}

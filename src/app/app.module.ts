@@ -7,11 +7,12 @@ import { HelloComponent } from './hello.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TaxaBitcoinService } from './services/taxa-bitcoin.service';
 import { TaxaBitcoinComponent } from './taxa-bitcoin/taxa-bitcoin.component';
+import { TemporizadorService } from './services/temporizador.service';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, HttpClientModule],
   declarations: [AppComponent, HelloComponent, TaxaBitcoinComponent],
   bootstrap: [AppComponent],
-  providers: [TaxaBitcoinService],
+  providers: [TaxaBitcoinService, TemporizadorService],
 })
 export class AppModule {}

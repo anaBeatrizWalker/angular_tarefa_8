@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TaxaBitcoinService } from '../services/taxa-bitcoin.service';
+import { TemporizadorService } from '../services/temporizador.service';
 
 @Component({
   selector: 'app-taxa-bitcoin',
@@ -7,7 +8,10 @@ import { TaxaBitcoinService } from '../services/taxa-bitcoin.service';
   styleUrls: ['./taxa-bitcoin.component.css'],
 })
 export class TaxaBitcoinComponent implements OnInit {
-  constructor(public taxaBitcoinService: TaxaBitcoinService) {}
+  constructor(
+    public taxaBitcoinService: TaxaBitcoinService,
+    public temporizadorService: TemporizadorService
+  ) {}
 
   ngOnInit() {
     this.taxaBitcoinService.getRates();

@@ -6,7 +6,10 @@
     <th>USD (dólar americano)</th>
     <th>BRL (real Brasil)</th>
   </tr>
-  <tr *ngFor="let rate of this.taxaBitcoinService.ratesList">
+  <tr
+    style="textAlign: center"
+    *ngFor="let rate of this.taxaBitcoinService.ratesList"
+  >
     <td>{{ rate.timestamp }}</td>
     <td>{{ rate.USD | currency }}</td>
     <td>{{ rate.BRL | currency }}</td>

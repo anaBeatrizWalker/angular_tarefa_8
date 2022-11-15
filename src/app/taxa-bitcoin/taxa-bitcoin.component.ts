@@ -16,12 +16,4 @@ export class TaxaBitcoinComponent implements OnInit {
   ngOnInit() {
     this.taxaBitcoinService.getRates();
   }
-
-  getCurrentRate() {
-    return this.taxaBitcoinService.currentRates;
-  }
-
-  update() {
-    this.taxaBitcoinService.getRates();
-  }
 }

@@ -1,8 +1,8 @@
-# angular_tarefa_8
+# ngServices_Tarefa
 
-# Tarefa de HttpCliet
+## Tarefa de HttpCliet
 
-## Criar um projeto com os seguintes requisitos:
+### Criar um projeto angular com os seguintes requisitos:
 
 - Um serviço que consulte a taxa do bitcoin em USD e BRL em https://api.coindesk.com/v1/bpi/currentprice/BRL.json;
 - Um serviço de temporizador;
